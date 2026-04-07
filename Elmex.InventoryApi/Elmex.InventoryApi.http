@@ -1,0 +1,65 @@
+@Elmex.InventoryApi_HostAddress = http://localhost:5010
+
+GET {{Elmex.InventoryApi_HostAddress}}/Inventory/
+
+
+###
+
+POST {{Elmex.InventoryApi_HostAddress}}/Inventory/
+Content-Type: application/json
+
+{
+  "name": "Capacitor Bank",
+  "quantity": 25,
+  "price": 1200.50
+}
+
+###
+
+
+PUT {{Elmex.InventoryApi_HostAddress}}/Inventory/1
+Content-Type: application/json
+
+{
+  "name": "Capacitor Bank (Upgraded)",
+  "quantity": 25,
+  "price": 1500.00
+}
+
+###
+
+DELETE {{Elmex.InventoryApi_HostAddress}}/Inventory/1
+
+###
+
+###
+
+GET {{Elmex.InventoryApi_HostAddress}}/Supplier/
+
+###
+
+POST {{Elmex.InventoryApi_HostAddress}}/Supplier/
+Content-Type: application/json
+
+{
+  "name": "L&T Plastics",
+  "contactPerson": "Shubham S",
+  "phoneNo": "9988776655"
+}
+
+###
+
+PUT {{Elmex.InventoryApi_HostAddress}}/Supplier/2
+Content-Type: application/json
+
+{
+  "name": "L&T Plastics (Gujarat)",
+  "contactPerson": "Hitesh P",
+  "phoneNo": "7878404444"
+}
+
+###
+
+DELETE {{Elmex.InventoryApi_HostAddress}}/Supplier/2
+
+###
